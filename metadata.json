@@ -1,0 +1,6 @@
+{
+  "name": "Mother Biotech × Nature's Canopy",
+  "description": "Premium tissue-culture teak plants, clonal varieties (MBT-1 to MBT-9), biotechnology research, and professional turnkey teak plantation development services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

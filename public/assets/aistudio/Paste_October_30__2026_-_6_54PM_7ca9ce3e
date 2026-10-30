@@ -1,0 +1,1653 @@
+# MASTER DEVELOPMENT PROMPT — MOTHER BIOTECH × NATURE'S CANOPY
+
+## 1. PROJECT OVERVIEW
+
+Act as a senior UI/UX designer, frontend architect, React developer, e-commerce product designer, and enterprise dashboard designer.
+
+Build a complete, premium, production-quality, fully responsive frontend website and multi-role dashboard platform for two connected brands:
+
+**PRIMARY BRAND: MOTHER BIOTECH**
+
+Business: Tissue-culture teak plant production, plant sales, clonal teak varieties, biotechnology research, nursery supply, individual plant purchases, and bulk plant orders.
+
+**SECONDARY BRAND: NATURE'S CANOPY**
+
+Business: Professional teak plantation development, plantation planning, land preparation, irrigation infrastructure, planting services, maintenance, plantation monitoring, and landowner project management.
+
+Mother Biotech must be the main website brand. Nature's Canopy must have a dedicated plantation services experience within the same platform.
+
+The objective is to create a visually stunning website that converts visitors into plant buyers, bulk-order customers, and plantation-service leads.
+
+**IMPORTANT: CURRENT DEVELOPMENT SCOPE IS FRONTEND UI ONLY.**
+
+Do not integrate real APIs, databases, payment gateways, or external authentication yet.
+
+However, build the UI architecture so these services can be integrated later without major restructuring.
+
+Every page must be implemented. Every visible interaction must work. Use realistic, internally consistent mock data and localStorage persistence.
+
+Do not generate a generic template, empty placeholder pages, or a simple landing page.
+
+---
+
+# 2. TECHNOLOGY STACK
+
+Use:
+
+- React 18+ with TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- Lucide React icons
+- React Router
+- Framer Motion or Motion for React
+- Recharts
+- React Hook Form
+- Zod validation
+- Zustand or Context API for shared state
+- localStorage for frontend persistence
+- Responsive CSS Grid and Flexbox
+
+Prepare the project for future integration with FastAPI and PostgreSQL.
+
+Use reusable components, TypeScript interfaces, consistent route definitions, and organized feature folders.
+
+Do not implement Three.js, React Three Fiber, video-frame sequences, or GSAP cinematic scrolling yet.
+
+Those will be integrated after the complete functional UI is finished.
+
+---
+
+# 3. DESIGN SYSTEM — PREMIUM BOTANICAL LUXURY
+
+Create a premium agricultural biotechnology aesthetic.
+
+The website must feel like a combination of:
+
+- Luxury nature conservation website
+- Premium botanical product store
+- Modern biotechnology company
+- Professional plantation management platform
+- High-quality agricultural investment presentation
+
+Avoid generic green e-commerce templates.
+
+## Color palette
+
+Primary Forest Green: #063B2D
+
+Deep Forest: #082A21
+
+Emerald Green: #087F5B
+
+Leaf Green: #48A868
+
+Sage Green: #A8C8A0
+
+Warm Ivory: #F8F7F1
+
+Soft Cream: #F1F2E8
+
+Gold Accent: #C8A45D
+
+Dark Text: #172820
+
+Muted Text: #718078
+
+White: #FFFFFF
+
+Danger: #DC3545
+
+Success: #22C55E
+
+Use dark forest green for major brand sections, warm ivory for page backgrounds, emerald for primary CTAs, and gold sparingly for premium accents.
+
+## Typography
+
+Use elegant, modern fonts:
+
+- Headings: Playfair Display or DM Serif Display
+- Body: Inter or Manrope
+- Dashboard: Inter
+
+Large editorial headings, comfortable body text, consistent spacing, excellent readability.
+
+## Components
+
+Create a reusable design system containing:
+
+- Primary and secondary buttons
+- Outline buttons
+- Icon buttons
+- Navigation menus
+- Dropdowns
+- Search bars
+- Product cards
+- Service cards
+- Statistic cards
+- Data tables
+- Tabs
+- Accordions
+- Modals
+- Drawers
+- Tooltips
+- Toast notifications
+- Skeleton loaders
+- Empty states
+- Error states
+- Pagination
+- Breadcrumbs
+- Step indicators
+- Form controls
+- Upload fields
+- Date pickers
+- Status indicators
+- Confirmation dialogs
+
+Use subtle hover transitions, clean shadows, rounded corners, restrained glass effects, and smooth page transitions.
+
+All components must work on desktop, tablet, and mobile.
+
+---
+
+# 4. GLOBAL PUBLIC WEBSITE LAYOUT
+
+## Header
+
+Build a premium responsive sticky navigation bar.
+
+Left:
+
+Mother Biotech logo and brand name.
+
+Center navigation:
+
+- Home
+- About Us
+- Our Technology
+- Shop Plants
+- Nine Teak Clones
+- Plantation Services
+- Our Projects
+- Gallery & Research
+- Contact
+
+Right:
+
+- Search
+- Cart with quantity badge
+- Account/Login
+- Get a Quote button
+
+Use dropdown navigation where appropriate.
+
+Plantation Services should have a clear Nature's Canopy identity.
+
+On mobile, create a slide-out navigation drawer with expandable submenus.
+
+## Footer
+
+Create a comprehensive footer containing:
+
+- Mother Biotech logo
+- Short company introduction
+- Quick links
+- Product categories
+- Plantation services
+- Customer support
+- Contact details
+- WhatsApp
+- Social media icons
+- Privacy Policy
+- Terms & Conditions
+- Shipping Policy
+- Return/Refund Policy
+- Copyright information
+
+Use editable placeholders for unconfirmed contact information.
+
+The supplied Mother Biotech material lists:
+
+Phone/WhatsApp: +91 87904 31313
+
+Website: www.motherbiotech.in
+
+Use these as supplied reference information, subject to confirmation.
+
+---
+
+# 5. PUBLIC PAGE 1 — HOME
+
+Route: /
+
+This must be the most visually impressive page.
+
+## Section 1 — Hero
+
+Create a full-viewport premium forest hero.
+
+Use a high-quality teak forest photograph or image asset.
+
+Reserve a dedicated hero media container for future replacement with our cinematic seed-to-tree video.
+
+Do not implement video animation now.
+
+Headline:
+
+"Grow Teak. Grow Timber. Grow a Greener India."
+
+Subheading:
+
+"Discover premium tissue-culture teak plants backed by biotechnology research and professional plantation expertise."
+
+Buttons:
+
+- Explore Our Plants
+- Discover Our Technology
+- Plan Your Plantation
+
+Add a subtle animated scroll indicator.
+
+Use beautiful text reveal animations.
+
+## Section 2 — Trust Highlights
+
+Create four premium statistics cards:
+
+- 25+ Years of Research Experience
+- 9 Selected Teak Clones
+- Tissue-Culture Propagation
+- Plantation Planning Expertise
+
+Treat these as brand-supplied claims, not independently verified certifications.
+
+## Section 3 — Featured Plants
+
+Show a horizontal or grid product showcase.
+
+Display:
+
+- Plant image
+- Clone name
+- Short description
+- Price or Request Price
+- Availability
+- View Details
+- Add to Cart
+- Request Quote
+
+## Section 4 — Why Mother Biotech?
+
+Create feature cards for:
+
+- Research-led propagation
+- Selected clonal planting material
+- Uniform growth potential
+- Technical planting guidance
+- Suitability assessment
+- Plantation support
+
+Avoid promising guaranteed results.
+
+## Section 5 — Our Nine Teak Clones
+
+Show nine elegant clone cards.
+
+Each card has a unique visual, clone ID, and View Details action.
+
+## Section 6 — Tissue Culture Technology
+
+Create a split-screen layout with laboratory photography and process steps.
+
+Process:
+
+1. Plant material selection
+2. Tissue culture initiation
+3. Multiplication
+4. Root development
+5. Hardening and acclimatization
+6. Nursery readiness
+7. Plantation
+
+Include a Learn More button.
+
+## Section 7 — Nature's Canopy
+
+Create a visually distinctive plantation services banner.
+
+Headline:
+
+"From Sapling to Sustainable Plantation."
+
+Include:
+
+- Land preparation
+- Sapling supply
+- Drip irrigation
+- Plantation management
+- Monitoring and maintenance
+
+CTA: Explore Plantation Services
+
+## Section 8 — Plantation Calculator Preview
+
+Allow visitors to enter acreage and instantly estimate plant requirements.
+
+Use a configurable default of 350 plants per acre based on the supplied example proposal.
+
+Clearly label it as an illustrative planning assumption.
+
+## Section 9 — Research & Insights
+
+Display article cards, research highlights, and downloadable reference material.
+
+## Section 10 — Gallery
+
+Show real plantation, laboratory, nursery, and event photographs.
+
+## Section 11 — Final CTA
+
+Headline:
+
+"Your Next Plantation Begins Here."
+
+Buttons:
+
+- Buy Teak Plants
+- Request Bulk Quotation
+- Talk to Our Team
+
+---
+
+# 6. PUBLIC PAGE 2 — ABOUT US
+
+Route: /about
+
+Build an editorial company profile.
+
+Sections:
+
+1. Full-width forest banner
+2. Company introduction
+3. Vision and mission
+4. Our biotechnology journey
+5. Research and innovation
+6. Our team and expertise
+7. Sustainability commitment
+8. Company milestones
+9. Photo gallery
+10. Contact CTA
+
+The supplied Nature's Canopy proposal discusses research associated with Dr. Balakrishna and more than 25 years of experience.
+
+Include this information in an editable research/team content section without inventing credentials or achievements.
+
+Use real supplied event photographs where appropriate.
+
+Do not identify unnamed people or assign names to photographs without confirmation.
+
+---
+
+# 7. PUBLIC PAGE 3 — OUR TECHNOLOGY
+
+Route: /technology
+
+Create a modern biotechnology education page.
+
+## Hero
+
+Headline:
+
+"Science Behind Every Sapling."
+
+Use premium tissue-culture laboratory imagery.
+
+## Interactive process timeline
+
+Build a clickable seven-stage process.
+
+When a stage is selected, show:
+
+- Stage title
+- Description
+- Image
+- Process illustration
+- Technical information
+
+## Additional sections
+
+- What is tissue-culture propagation?
+- How clonal propagation works
+- Nursery hardening
+- Clone selection
+- Plant quality considerations
+- Plantation establishment
+- Research findings
+- Frequently asked questions
+
+Create a visually engaging comparison of conventional propagation and tissue-culture propagation, using carefully qualified language.
+
+Use research material provided by the business. Do not invent scientific findings.
+
+---
+
+# 8. PUBLIC PAGE 4 — SHOP PLANTS
+
+Route: /shop
+
+Create a complete e-commerce catalog UI.
+
+## Shop layout
+
+Left sidebar filters on desktop.
+
+Top filter drawer on mobile.
+
+Main area with product grid.
+
+## Filters
+
+- Clone type
+- Plant category
+- Price range
+- Availability
+- Plant height
+- Minimum order quantity
+- Recommended use
+- Sort by price
+- Sort by name
+- Sort by popularity
+
+## Product cards
+
+Every card must contain:
+
+- Product image
+- Clone ID
+- Product name
+- Height or size
+- Availability
+- Price or Request Price
+- Quantity selector
+- View Details
+- Add to Cart
+- Request Quote
+
+Create functional filtering, sorting, pagination, search, and cart interactions.
+
+Do not invent actual commercial prices.
+
+Use editable mock prices clearly identified as demo values, or use Request Price where no verified price exists.
+
+---
+
+# 9. PUBLIC PAGE 5 — PLANT DETAILS
+
+Route: /shop/:slug
+
+Create a detailed product page.
+
+## Left panel
+
+- Main plant image
+- Image thumbnails
+- Zoom interaction
+- Multiple product views
+- Placeholder container for future 3D plant viewer
+
+## Right panel
+
+- Product name
+- Clone ID
+- Category
+- Price or Request Price
+- Stock status
+- Plant height
+- Quantity selector
+- Minimum order information
+- Add to Cart
+- Buy Now
+- Request Bulk Quote
+- WhatsApp Enquiry
+
+## Information tabs
+
+- Overview
+- Plant Specifications
+- Planting Guidelines
+- Soil & Climate Suitability
+- Care Instructions
+- Research Information
+- Delivery Information
+- FAQs
+
+## Additional sections
+
+- Related plants
+- Bulk ordering information
+- Planting recommendations
+- Customer enquiries
+- Plantation services upsell
+
+Every product must have a unique route.
+
+---
+
+# 10. PUBLIC PAGE 6 — NINE TEAK CLONES
+
+Route: /clones
+
+Build a dedicated clone discovery experience.
+
+The supplied materials refer to nine selected clones.
+
+Use identifiers:
+
+MBT-1 through MBT-9.
+
+Create a grid of nine premium clone cards.
+
+Each card opens a detailed information panel or route.
+
+## Clone detail fields
+
+- Clone ID
+- Clone name
+- Description
+- Plant photographs
+- Propagation method
+- Suitable soil conditions
+- Climate considerations
+- Rainfall requirements
+- Growth characteristics
+- Planting guidelines
+- Stock availability
+- Enquiry action
+
+If clone-specific information is unavailable, show "Technical details available on request."
+
+Do not fabricate clone-specific performance characteristics.
+
+## Clone comparison tool
+
+Allow users to select up to three clones.
+
+Display them side by side.
+
+Compare only known information.
+
+Add a "Request Clone Recommendation" form asking for:
+
+- State and district
+- Land area
+- Soil type
+- Water availability
+- Rainfall conditions
+- Planting objective
+- Contact information
+
+---
+
+# 11. PUBLIC PAGE 7 — PLANTATION SERVICES
+
+Route: /plantation-services
+
+Brand this page as Nature's Canopy.
+
+Create a cinematic professional plantation development page.
+
+## Hero
+
+Headline:
+
+"Your Land. Our Expertise. A Greener Future."
+
+Subheading:
+
+"Comprehensive teak plantation planning, establishment, and management services."
+
+## Services
+
+Create detailed service cards for:
+
+1. Land survey and assessment
+2. Plantation layout planning
+3. Land clearing and preparation
+4. Soil preparation
+5. Tissue-culture sapling procurement
+6. Sapling transportation
+7. Planting and establishment
+8. Drip irrigation systems
+9. Borewell and water storage planning
+10. Fencing and site protection
+11. Organic manure and soil management
+12. Weed control and pruning
+13. Pest and disease monitoring
+14. Plantation supervision
+15. Growth monitoring
+16. Maintenance and reporting
+
+Each service should have:
+
+- Image
+- Description
+- Benefits
+- Process
+- Request Consultation button
+
+## Plantation journey
+
+Build a horizontal or vertical process timeline:
+
+Consultation → Site Survey → Planning → Quotation → Agreement → Land Preparation → Planting → Maintenance → Monitoring.
+
+## Consultation form
+
+Fields:
+
+- Name
+- Phone
+- Email
+- State
+- District
+- Land acreage
+- Land ownership status
+- Water availability
+- Preferred planting timeline
+- Additional requirements
+- Optional document upload
+
+Show a confirmation state and save enquiries in localStorage.
+
+---
+
+# 12. PUBLIC PAGE 8 — PLANTATION CALCULATOR
+
+Route: /plantation-calculator
+
+Create an advanced, beautiful, interactive calculator.
+
+## Inputs
+
+- Total land area
+- Unit: acres or hectares
+- Plant spacing
+- Plants per acre
+- Sapling unit price
+- Estimated mortality allowance
+- Irrigation requirement
+- Plantation service requirement
+
+## Outputs
+
+- Estimated plant count
+- Additional saplings for allowance
+- Estimated sapling purchase cost
+- Illustrative plantation setup cost
+- Total indicative cost
+- Suggested next steps
+
+Use 350 plants per acre as the default example from the supplied 350-acre proposal, but allow the user to change it.
+
+Include a spacing-based calculation option and explain that spacing and planting density must be consistent.
+
+## Important financial handling
+
+Do not present timber revenue projections as guaranteed income.
+
+If financial projections are displayed, label them illustrative and allow assumptions to be edited.
+
+Separate sapling cost, establishment cost, maintenance cost, and potential timber revenue.
+
+Create:
+
+- Calculation results cards
+- Visual planting grid
+- Cost breakdown chart
+- Download estimate action
+- Request Detailed Quote button
+
+The Download Estimate action should generate a real printable document or PDF if practical; otherwise provide a working print view.
+
+---
+
+# 13. PUBLIC PAGE 9 — OUR PROJECTS
+
+Route: /projects
+
+Create a professional plantation project portfolio.
+
+## Sections
+
+- Project overview
+- Plantation planning experience
+- Featured projects
+- Project categories
+- Project photographs
+- Plantation development process
+- Client enquiry CTA
+
+Use a project card structure containing:
+
+- Project title
+- Location
+- Acreage
+- Plant count
+- Project stage
+- Start date
+- Photos
+- Services involved
+
+The supplied Nature's Canopy proposal includes a 350-acre, 1,22,500-sapling plantation plan.
+
+Display this as an **example project proposal** unless confirmed as an active or completed project.
+
+Do not invent client names, project locations, completion dates, or outcomes.
+
+Create a project details page with tabs for Overview, Scope, Gallery, and Timeline.
+
+---
+
+# 14. PUBLIC PAGE 10 — GALLERY & RESEARCH
+
+Route: /gallery
+
+Create a premium media gallery.
+
+## Categories
+
+- Teak plantations
+- Tissue-culture laboratory
+- Nursery plants
+- Plantation development
+- Company events
+- Research activities
+- Videos
+- Publications
+
+Features:
+
+- Responsive masonry layout
+- Category filters
+- Search
+- Image lightbox
+- Previous/next controls
+- Video preview modal
+- Fullscreen viewer
+- Image captions
+- Research article cards
+
+Use the uploaded photographs as the primary gallery assets.
+
+Avoid duplicated photographs where possible.
+
+Research content should have source title, publication information, summary, and reference links when available.
+
+---
+
+# 15. PUBLIC PAGE 11 — CONTACT & ENQUIRY
+
+Route: /contact
+
+Create a polished contact page.
+
+## Contact cards
+
+- Call Us
+- WhatsApp
+- Email
+- Office Location
+- Request Consultation
+
+Use editable placeholders for unconfirmed details.
+
+## Contact form
+
+Fields:
+
+- Full name
+- Phone number
+- Email
+- Enquiry category
+- Product interest
+- Quantity
+- Land acreage if relevant
+- Location
+- Message
+- Attachment
+
+## Enquiry categories
+
+- Buy Teak Plants
+- Bulk Plant Order
+- Clone Information
+- Plantation Development
+- Technical Guidance
+- General Enquiry
+
+Validate inputs and display a working success message.
+
+Save submissions locally and make them visible in the staff/admin enquiry dashboard.
+
+---
+
+# 16. PUBLIC PAGE 12 — CART & CHECKOUT
+
+Routes:
+
+/cart
+/checkout
+/order-success
+
+## Cart
+
+Features:
+
+- Product image
+- Product name
+- Clone ID
+- Quantity increase/decrease
+- Remove item
+- Stock warning
+- Price calculation
+- Order subtotal
+- Continue Shopping
+- Proceed to Checkout
+- Request Quote
+
+## Checkout
+
+Step 1: Customer Information
+
+Step 2: Delivery Address
+
+Step 3: Order Review
+
+Step 4: Payment Method
+
+Step 5: Confirmation
+
+Payment options should be UI-only:
+
+- Online Payment — Demo
+- Bank Transfer — Demo
+- Pay Later / Sales Confirmation
+- Request Quotation
+
+Do not process real payments or store card details.
+
+Create a working simulated order confirmation flow with generated demo order IDs.
+
+Persist orders in localStorage.
+
+---
+
+# 17. AUTHENTICATION UI
+
+Routes:
+
+/login
+/register
+/forgot-password
+/reset-password
+
+Create premium branded authentication pages.
+
+## Login
+
+- Email
+- Password
+- Show/hide password
+- Remember me
+- Forgot password
+- Login button
+- Registration link
+
+## Registration
+
+- Full name
+- Email
+- Phone
+- Password
+- Confirm password
+- Account type: Individual Buyer / Farmer / Landowner / Business Buyer
+- Terms acceptance
+
+## Demo role access
+
+Provide a development-only demo role switcher for:
+
+- Customer
+- Sales Staff
+- Plantation Manager
+- Super Admin
+
+Use mock authentication and localStorage.
+
+Clearly indicate demo authentication is not secure and must be replaced before production.
+
+Implement route guards for demonstration purposes.
+
+---
+
+# 18. CUSTOMER DASHBOARD
+
+Route prefix: /dashboard
+
+Create a modern customer portal with sidebar navigation.
+
+## Sidebar
+
+- Overview
+- My Orders
+- Order Tracking
+- My Quotations
+- Plantation Requests
+- Saved Plants
+- Addresses
+- Payments
+- Notifications
+- Profile
+- Support
+- Logout
+
+## Overview
+
+Show:
+
+- Welcome card
+- Total orders
+- Active orders
+- Pending quotations
+- Plantation requests
+- Recent orders
+- Recommended plants
+- Quick actions
+
+## My Orders
+
+Functional table with:
+
+- Order ID
+- Date
+- Products
+- Quantity
+- Amount
+- Payment status
+- Order status
+- View Details
+
+Add search, filters, pagination, and detail modal.
+
+## Order Tracking
+
+Display a step-based timeline:
+
+Order Placed → Confirmed → Preparing → Dispatched → Delivered.
+
+Use simulated order statuses.
+
+## My Quotations
+
+Show quote requests, response status, item details, estimated amount, and actions.
+
+## Plantation Requests
+
+Show consultation requests, site survey status, quotation status, and project progress.
+
+## Saved Plants
+
+Wishlist grid with Add to Cart and Remove actions.
+
+## Profile
+
+Editable personal information, addresses, and account preferences.
+
+---
+
+# 19. SALES & OPERATIONS DASHBOARD
+
+Route prefix: /operations
+
+Create a professional enterprise dashboard.
+
+Use role-based navigation for Sales Staff and Plantation Managers.
+
+## Sales Staff modules
+
+### Overview
+
+- Total leads
+- New enquiries
+- Pending quotations
+- Orders awaiting confirmation
+- Sales summary
+- Recent activities
+
+### Leads Management
+
+Table fields:
+
+- Lead ID
+- Customer
+- Contact
+- Enquiry source
+- Product interest
+- Quantity
+- Lead status
+- Assigned staff
+- Created date
+
+Actions:
+
+- View
+- Edit
+- Assign
+- Change status
+- Add notes
+- Create quotation
+
+### Quotations
+
+Create quotation form:
+
+- Customer details
+- Products
+- Quantity
+- Unit price
+- Discount
+- Taxes
+- Delivery charges
+- Validity date
+- Terms
+- Notes
+
+Support draft, sent, accepted, rejected, and expired statuses.
+
+### Orders
+
+View, search, filter, and update orders.
+
+### Inventory
+
+- Product stock
+- Clone stock
+- Nursery batches
+- Available quantity
+- Reserved quantity
+- Low-stock alerts
+- Stock adjustments
+- Movement history
+
+### Dispatch
+
+- Pending dispatch
+- Packing status
+- Delivery details
+- Tracking reference
+- Dispatch date
+- Delivery confirmation
+
+### Customer Follow-ups
+
+Task list with reminders, priority, status, and notes.
+
+All operations must work with shared mock state.
+
+---
+
+# 20. PLANTATION MANAGER DASHBOARD
+
+Route prefix: /operations/plantations
+
+Build a specialized Nature's Canopy operations interface.
+
+## Overview
+
+- Active projects
+- Total managed acreage
+- Total saplings allocated
+- Pending site surveys
+- Maintenance tasks
+- Upcoming milestones
+
+## Project Management
+
+Project list with:
+
+- Project ID
+- Client
+- Location
+- Land acreage
+- Sapling count
+- Start date
+- Project stage
+- Assigned manager
+- Status
+
+## Project Details
+
+Create tabs:
+
+1. Overview
+2. Land Survey
+3. Plantation Layout
+4. Sapling Allocation
+5. Irrigation
+6. Maintenance
+7. Growth Monitoring
+8. Documents
+9. Photos
+10. Reports
+
+## Site Survey
+
+Form with:
+
+- Location
+- Acreage
+- Soil observations
+- Water availability
+- Existing vegetation
+- Accessibility
+- Survey notes
+- Photo uploads
+
+## Maintenance Schedule
+
+- Task title
+- Project
+- Assigned worker
+- Priority
+- Due date
+- Completion status
+- Notes
+
+## Growth Monitoring
+
+Allow entering:
+
+- Inspection date
+- Plot or block
+- Plant count inspected
+- Survival count
+- Average height
+- Average girth
+- Observations
+- Photos
+- Recommended actions
+
+Display charts and historical trends.
+
+## Reports
+
+Create printable project summaries, progress reports, and maintenance reports.
+
+Use demo data and realistic workflows.
+
+---
+
+# 21. SUPER ADMIN DASHBOARD
+
+Route prefix: /admin
+
+Build a complete enterprise-level administration UI.
+
+## Sidebar
+
+- Dashboard
+- Products
+- Teak Clones
+- Categories
+- Inventory
+- Orders
+- Customers
+- Quotations
+- Enquiries
+- Plantation Projects
+- Staff & Roles
+- Payments
+- Website CMS
+- Gallery & Media
+- Research Articles
+- Reports & Analytics
+- Notifications
+- Settings
+- Audit Activity
+- Logout
+
+## Admin Overview
+
+Top KPI cards:
+
+- Total Sales
+- Total Orders
+- Total Customers
+- Total Enquiries
+- Pending Quotations
+- Active Plantation Projects
+- Available Plant Stock
+- Low-Stock Products
+
+Charts:
+
+- Monthly sales
+- Order trends
+- Enquiry sources
+- Popular clones
+- Plantation project status
+- Inventory distribution
+
+Include date-range filters and recent activity.
+
+## Product Management
+
+Create full CRUD UI.
+
+Fields:
+
+- Product name
+- Clone ID
+- SKU
+- Category
+- Description
+- Plant size
+- Price
+- Original price
+- Stock
+- Minimum order quantity
+- Images
+- Plant specifications
+- Planting guidance
+- Visibility
+- Status
+
+## Clone Management
+
+Manage MBT-1 through MBT-9.
+
+Allow editing verified clone information, images, availability, and technical details.
+
+## Customer Management
+
+- Customer list
+- Search
+- Filters
+- Customer details
+- Order history
+- Quotations
+- Plantation enquiries
+- Status
+
+## Staff & Roles
+
+- Create staff
+- Edit staff
+- Assign roles
+- Set module permissions
+- Activate/deactivate accounts
+
+## Plantation Project Management
+
+Manage:
+
+- Client
+- Location
+- Acreage
+- Saplings
+- Assigned manager
+- Milestones
+- Progress
+- Maintenance
+- Documents
+
+## Website CMS
+
+Build an editable content management interface for:
+
+- Homepage headings
+- Hero descriptions
+- Banner images
+- Featured products
+- About page
+- Technology content
+- Service descriptions
+- Research articles
+- FAQs
+- Footer
+- Contact information
+
+Content edits should update the public frontend through shared mock state.
+
+## Reports
+
+- Sales reports
+- Orders
+- Customer enquiries
+- Inventory
+- Quotations
+- Plantation projects
+- Staff activity
+
+Allow CSV export and print views.
+
+## Settings
+
+- Business profile
+- Contact information
+- Store settings
+- Currency
+- Tax configuration
+- Shipping configuration
+- Notification preferences
+- Branding
+- Role permissions
+
+---
+
+# 22. SHARED FRONTEND DATA MODEL
+
+Define TypeScript types/interfaces for:
+
+- User
+- Role
+- Permission
+- Product
+- TeakClone
+- ProductCategory
+- InventoryBatch
+- StockMovement
+- CartItem
+- Order
+- OrderItem
+- Address
+- PaymentRecord
+- Quotation
+- QuotationItem
+- Enquiry
+- PlantationProject
+- SiteSurvey
+- PlantationBlock
+- MaintenanceTask
+- GrowthRecord
+- MediaAsset
+- ResearchArticle
+- Notification
+- CMSContent
+- AuditEvent
+
+Use a central mock data service.
+
+Avoid inconsistent duplicate records.
+
+For example:
+
+- An order created in checkout appears in the customer dashboard and admin dashboard.
+- A quotation request appears in the customer's quotation list and the sales dashboard.
+- An enquiry submitted on the contact page appears in operations.
+- A product updated in admin changes in the public shop.
+- Stock adjustments update product availability.
+- A plantation project created by admin appears in the assigned plantation manager dashboard.
+
+Use localStorage persistence with sensible initial demo data and a reset-demo-data option.
+
+---
+
+# 23. INTERACTION REQUIREMENTS
+
+Every visible button and control must perform a meaningful action.
+
+Implement:
+
+- Functional navigation
+- Search
+- Filters
+- Sorting
+- Pagination
+- Product selection
+- Cart management
+- Wishlist
+- Checkout simulation
+- Quotation requests
+- Enquiry submissions
+- CRUD modals
+- Edit forms
+- Delete confirmations
+- Role switching
+- Dashboard filters
+- Status changes
+- Notifications
+- Toast messages
+- Form validation
+- File previews
+- Image galleries
+- Download/print actions
+- Responsive sidebar
+- Mobile menus
+
+Never show a success message unless the corresponding mock state has actually been updated.
+
+Use loading, empty, validation-error, and success states.
+
+Avoid dead buttons and decorative-only interactions.
+
+---
+
+# 24. RESPONSIVE DESIGN
+
+Support:
+
+- Large desktop
+- Laptop
+- Tablet
+- Mobile
+
+Public website:
+
+- Large editorial layouts on desktop
+- Responsive grids
+- Mobile navigation drawer
+- Touch-friendly product controls
+- Sticky mobile purchase action where useful
+
+Dashboards:
+
+- Collapsible sidebar
+- Mobile drawer
+- Responsive charts
+- Scrollable or card-based tables
+- Compact filters
+- Touch-friendly forms
+
+Prevent horizontal page overflow.
+
+---
+
+# 25. ACCESSIBILITY & PERFORMANCE
+
+Implement:
+
+- Semantic HTML
+- Proper heading hierarchy
+- Accessible labels
+- Keyboard navigation
+- Visible focus states
+- Accessible dialogs
+- Adequate color contrast
+- Reduced-motion support
+- Image alt text
+- Lazy loading
+- Route-level code splitting
+- Optimized images
+- Efficient state updates
+
+Use motion thoughtfully. Do not make ordinary dashboard workflows slow because of unnecessary animations.
+
+---
+
+# 26. BRAND ASSETS & CONTENT RULES
+
+I will provide:
+
+- Mother Biotech brand materials
+- Nature's Canopy proposal PDF
+- Teak plantation photographs
+- Nursery photographs
+- Company event photographs
+- Research posters
+- Videos
+
+Use the provided assets where appropriate.
+
+Do not randomly replace real business photographs with unrelated images.
+
+Do not claim that an illustrative project is completed.
+
+Do not invent product certifications, patents, commercial guarantees, customer testimonials, scientific outcomes, or financial returns.
+
+The proposal includes illustrative plantation costs and revenue projections. Do not present those as guaranteed earnings or standard retail prices.
+
+Where information is missing, use clearly editable placeholders.
+
+Separate verified data, supplied marketing claims, and demonstration data.
+
+---
+
+# 27. PROJECT STRUCTURE
+
+Organize the project approximately as follows:
+
+src/
+  app/
+  assets/
+  components/
+    ui/
+    layout/
+    shared/
+    products/
+    plantation/
+    dashboard/
+  pages/
+    public/
+    auth/
+    customer/
+    operations/
+    admin/
+  features/
+    auth/
+    cart/
+    products/
+    orders/
+    quotations/
+    enquiries/
+    inventory/
+    plantations/
+    cms/
+  hooks/
+  services/
+  store/
+  data/
+  types/
+  utils/
+  styles/
+
+Use clear component naming and maintainable architecture.
+
+Create separate layout components for:
+
+- PublicLayout
+- AuthLayout
+- CustomerDashboardLayout
+- OperationsDashboardLayout
+- AdminDashboardLayout
+
+---
+
+# 28. DEVELOPMENT ORDER
+
+Build the project in this order:
+
+**Phase 1 — Foundation**
+
+Create Vite React TypeScript project, dependencies, Tailwind configuration, theme, routing, mock data, global layouts, navigation, reusable UI components, and application state.
+
+**Phase 2 — Public Website**
+
+Implement all 12 public pages and supporting screens with responsive layouts and functional interactions.
+
+**Phase 3 — E-commerce**
+
+Implement product catalog, clone details, cart, checkout simulation, wishlist, quotations, and order history.
+
+**Phase 4 — Customer Dashboard**
+
+Implement authentication demo, customer overview, orders, quotations, tracking, saved plants, profile, and plantation requests.
+
+**Phase 5 — Operations Dashboard**
+
+Implement sales leads, quotations, inventory, dispatch, follow-ups, and plantation management.
+
+**Phase 6 — Admin Dashboard**
+
+Implement admin analytics, product CRUD, inventory, customers, orders, staff roles, plantation projects, CMS, and reports.
+
+**Phase 7 — Functional Testing**
+
+Verify navigation, CRUD, persistence, role permissions, responsive layouts, forms, calculations, and cross-dashboard data synchronization.
+
+**Phase 8 — Final Polish**
+
+Improve typography, animations, spacing, empty states, accessibility, image handling, loading states, and overall visual consistency.
+
+---
+
+# 29. FUTURE CINEMATIC INTEGRATION
+
+Do not build the cinematic video experience now.
+
+However, architect the homepage so we can later integrate:
+
+- Seed-to-mature-teak growth video
+- Scroll-controlled video frame sequences
+- Text Wizard heading animations
+- GSAP ScrollTrigger
+- Three.js plant models
+- Interactive forest navigation
+- Smooth camera transitions
+- Animated plantation storytelling
+
+Keep the hero component modular so its background can later be replaced without changing the rest of the website.
+
+---
+
+# 30. FINAL QUALITY REQUIREMENTS
+
+The result must feel like a real premium commercial website and enterprise management system.
+
+Do not produce only a landing page.
+
+Do not leave dashboard pages empty.
+
+Do not use generic placeholder text everywhere.
+
+Do not put the entire application into one enormous component.
+
+Do not create navigation links that lead nowhere.
+
+Do not simulate functionality with alerts when proper stateful UI can be implemented.
+
+Ensure all pages share a consistent visual identity.
+
+The public website must feel premium, botanical, elegant, and cinematic-ready.
+
+The dashboards must feel professional, efficient, data-rich, and enterprise-grade.
+
+Prioritize visual quality and functional completeness equally.
+
+Build a complete working frontend using mock data.
+
+If the implementation is too large for one generation, complete it in logical phases, preserve the existing code, and continue without replacing working features.
+
+Start by creating the complete application architecture, design system, global navigation, mock data models, and the fully responsive public homepage. Then continue systematically through the remaining pages.
+
+**The final goal is a complete, beautiful, fully functional frontend for Mother Biotech plant sales and Nature's Canopy plantation services, ready for backend integration and future cinematic 3D animation.**
